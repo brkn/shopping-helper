@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
+    "test:c": "rm -rf coverage/ && jest --coverage",
     "tsc": "rm -rf dist/ && tsc"
   },
   "author": "brkn",
@@ -12,6 +13,8 @@
   "dependencies": {},
   "devDependencies": {
     "@types/jest": "^24.0.20",
+    "@types/jsdom": "^12.2.4",
+    "@types/node": "^12.11.7",
     "jest": "^24.9.0",
     "ts-jest": "^24.1.0",
     "typescript": "^3.6.4"
