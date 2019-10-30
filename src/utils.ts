@@ -1,3 +1,5 @@
 export function convertPriceToNumber(priceText: string) {
-  return Number(priceText.replace(/[^0-9\.\-]+/g, ""));
+  let result = priceText.replace(",", ".");
+  
+  return Number(result.replace(/[^0-9\.\-]+/g, ""));
 }
