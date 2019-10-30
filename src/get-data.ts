@@ -7,7 +7,7 @@ export function getProductListElement() {
 }
 
 /**
- * @param product: <li class="product-item">
+ * param product: <li class="product-item">
  */
 export function getProductPrice(product: HTMLLIElement) {
   const prices = getPriceWrapperElement();
