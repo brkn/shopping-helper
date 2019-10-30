@@ -10,9 +10,7 @@ export function getProductListElement() {
  * @param product: <li class="product-item">
  */
 export function getProductPrice(product: HTMLLIElement) {
-  const prices = product.querySelector(
-    "article.hm-product-item > div.item-details > strong.item-price"
-  );
+  const prices = getPriceWrapperElement();
 
   if (!prices) {
     throw new Error(
@@ -20,13 +18,21 @@ export function getProductPrice(product: HTMLLIElement) {
     );
   }
 
-  const salePrice = (prices.querySelector(".sale") as HTMLSpanElement)
-    .innerText;
-  const regularPrice = (prices.querySelector(".regular") as HTMLSpanElement)
-    .innerText;
+  const salePrice = getPriceValue("sale");
+  const regularPrice = getPriceValue("regular");
 
   return {
     salePrice: convertPriceToNumber(salePrice),
     regularPrice: convertPriceToNumber(regularPrice)
   };
+
+  function getPriceWrapperElement() {
+    return product.querySelector(
+      "article.hm-product-item > div.item-details > strong.item-price"
+    );
+  }
+
+  function getPriceValue(priceType: "sale" | "regular") {
+    return prices!.querySelector(`.${priceType}`)!.innerHTML;
+  }
 }
