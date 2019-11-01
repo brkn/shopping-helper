@@ -1,4 +1,4 @@
-import { getProductListElement } from "./get-data";
+import { getProductListElement } from "./data";
 
 const productListElement = getProductListElement();
 

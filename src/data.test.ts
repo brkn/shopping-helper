@@ -1,6 +1,6 @@
 import { JSDOM } from "jsdom";
 
-import { getProductListElement, getProductPrice } from "./get-data";
+import { getProductListElement, getProductPrice } from "./data";
 import { getMockProduct } from "./__mocks__/get-data";
 
 describe("getProductListElement", () => {
