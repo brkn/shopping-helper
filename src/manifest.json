@@ -6,7 +6,7 @@
   "content_scripts": [
     {
       "matches": ["https://www2.hm.com/tr_tr/*"],
-      "js": ["utils.js, data.js, index.js"]
+      "js": ["utils.js", "data.js", "index.js"]
     }
   ]
 }
