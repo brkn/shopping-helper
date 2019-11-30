@@ -1,7 +1,7 @@
 export function convertPriceToNumber(priceText: string) {
-  let result = priceText.replace(",", ".");
+  const result = priceText.replace(",", ".");
 
-  return Number(result.replace(/[^0-9\.\-]+/g, ""));
+  return Number(result.replace(/[^0-9.-]+/g, ""));
 }
 
 export function getDiscount(regularPrice: number, salePrice: number) {

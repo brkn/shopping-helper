@@ -1,7 +1,7 @@
 import {JSDOM} from "jsdom";
 
 export async function getMockProduct() {
-  return await JSDOM.fragment(`<li class="product-item">
+  return JSDOM.fragment(`<li class="product-item">
   <article
     class="hm-product-item"
     data-energy-interval=""
