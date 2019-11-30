@@ -10,7 +10,8 @@
     "test:c": "rm -rf coverage/ && jest --coverage",
     "tsc": "rm -rf dist/ && tsc",
     "eslint": "./node_modules/.bin/eslint --ext .jsx,.js,.tsx,.ts src/",
-    "eslint:fix": "./node_modules/.bin/eslint --fix --ext .jsx,.js,.tsx,.ts src/"
+    "eslint:fix": "./node_modules/.bin/eslint --fix --ext .jsx,.js,.tsx,.ts src/",
+    "build": "npm run tsc; cp src/manifest.json ./dist/"
   },
   "husky": {
     "hooks": {
