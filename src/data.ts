@@ -2,8 +2,7 @@ import {convertPriceToNumber} from "./utils";
 
 export function getProductListElement() {
   const queryString =
-    "main.segments > div.sidebar-plus-content > div.page-content > div.main > div:nth-child(6) > ul.products-listing";
-
+    "#main-content > div.sidebar-plus-content > div > div > div:nth-child(5) > ul";
   return document.querySelector<HTMLUListElement>(queryString);
 }
 
