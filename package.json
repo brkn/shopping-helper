@@ -1,7 +1,7 @@
 {
-  "name": "hm-shopping-helper",
-  "version": "0.0.1",
-  "description": "",
+  "name": "shopping-helper",
+  "version": "0.2.0",
+  "description": "A shopping helper that aims improving online shopping experience",
   "main": "index.js",
   "author": "brkn",
   "license": "MPL-2.0",

@@ -1,0 +1,13 @@
+{
+  "name": "shopping-helper",
+  "version": "0.1.0",
+  "description": "A shopping helper that aims improving online shopping experience",
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "matches": ["https://www2.hm.com/tr_tr/*"],
+      "css": ["myStyles.css"],
+      "js": ["contentScript.js"]
+    }
+  ]
+}
