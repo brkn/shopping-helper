@@ -1,4 +1,7 @@
-import {convertPriceToNumber, getDiscount} from "./utils";
+import {
+  convertPriceToNumber,
+  getDiscount
+} from "./utils";
 
 describe("convertPriceToNumber", () => {
   describe("converts integers, example:", () => {
