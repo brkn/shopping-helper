@@ -1,7 +1,7 @@
-import { JSDOM } from "jsdom";
+import {JSDOM} from "jsdom";
 
-import { getProductListElement, getProductPrice } from "./data";
-import { getMockProduct } from "./__mocks__/get-data";
+import {getProductListElement, getProductPrice} from "./data";
+import {getMockProduct} from "./__mocks__/get-data";
 
 describe("getProductListElement", () => {
   beforeAll(async () => {
@@ -24,7 +24,7 @@ describe("getProductPrice", () => {
 
   const mockPrices = {
     salePrice: 89.99,
-    regularPrice: 149.00
+    regularPrice: 149.0,
   };
 
   beforeEach(async () => {

@@ -1,4 +1,4 @@
-import { convertPriceToNumber, getDiscount } from "./utils";
+import {convertPriceToNumber, getDiscount} from "./utils";
 
 describe("convertPriceToNumber", () => {
   describe("converts integers, example:", () => {
@@ -54,12 +54,12 @@ describe("convertPriceToNumber", () => {
   });
 });
 
-describe('getDiscount', () => {
-  test('3 to 1 returns 67', () => {
-    expect(getDiscount(3, 1)).toEqual(67)
+describe("getDiscount", () => {
+  test("3 to 1 returns 67", () => {
+    expect(getDiscount(3, 1)).toEqual(67);
   });
 
-  test('5 to 1 returns 80', () => {
-    expect(getDiscount(5, 1)).toEqual(80)
+  test("5 to 1 returns 80", () => {
+    expect(getDiscount(5, 1)).toEqual(80);
   });
 });

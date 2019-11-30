@@ -1,4 +1,4 @@
-import { convertPriceToNumber } from "./utils";
+import {convertPriceToNumber} from "./utils";
 
 export function getProductListElement() {
   const queryString =
@@ -24,7 +24,7 @@ export function getProductPrice(product: HTMLLIElement) {
 
   return {
     salePrice: convertPriceToNumber(salePrice),
-    regularPrice: convertPriceToNumber(regularPrice)
+    regularPrice: convertPriceToNumber(regularPrice),
   };
 
   function getPriceWrapperElement() {

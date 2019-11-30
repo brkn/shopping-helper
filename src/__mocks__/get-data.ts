@@ -1,4 +1,4 @@
-import { JSDOM } from "jsdom";
+import {JSDOM} from "jsdom";
 
 export async function getMockProduct() {
   return await JSDOM.fragment(`<li class="product-item">
