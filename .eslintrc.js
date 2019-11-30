@@ -21,6 +21,7 @@ module.exports = {
     ecmaVersion: 2018,
     sourceType: "module",
   },
+  ignorePatterns: ["dist/", "node_modules/"],
   plugins: ["@typescript-eslint"],
   rules: {
     // prettier rules
@@ -50,10 +51,14 @@ module.exports = {
       {
         /* ObjectExpression: "always",
         ObjectPattern: {multiline: true}, */
-        ImportDeclaration: { "multiline": true, "minProperties": 2, "consistent": true},
-        ExportDeclaration: { "multiline": true, "minProperties": 2 }
+        ImportDeclaration: {
+          multiline: true,
+          minProperties: 2,
+          consistent: true,
+        },
+        ExportDeclaration: {multiline: true, minProperties: 2},
       },
     ],
-    "object-property-newline": "error"
+    "object-property-newline": "error",
   },
 };
