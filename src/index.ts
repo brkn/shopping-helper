@@ -14,6 +14,20 @@ if (productListElement) {
     const child = children[i] as HTMLLIElement;
     const prices = getProductPrice(child);
 
-    console.log(getDiscount(prices.regularPrice, prices.salePrice));
+    // TODO: move  this to create element function
+    // This should be the created element, could be useful at test:
+    // <span class="price discount">50%</span>
+    const discountElement = document.createElement("span");
+    const priceText = document.createTextNode(`%${getDiscount(prices.regularPrice, prices.salePrice)}`);
+    discountElement.setAttribute("class", "price discount");
+    // TODO: instead of appendChild, use insertBefore
+    discountElement.appendChild(priceText);
+
+
+    const itemPriceElement = child.querySelector("strong.item-price");
+
+    if (itemPriceElement) {
+      itemPriceElement.appendChild(discountElement);
+    }
   }
 }
