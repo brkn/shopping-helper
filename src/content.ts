@@ -33,3 +33,7 @@ if (productListElement) {
   }
   latestIndex = children.length - 1;
 }
+
+chrome.runtime.onMessage.addListener((message) => {
+  console.log(message);
+});

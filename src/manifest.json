@@ -3,10 +3,15 @@
   "version": "0.2.0",
   "description": "A shopping helper that aims improving online shopping experience",
   "manifest_version": 2,
+  "permissions": ["webRequest", "https://www2.hm.com/tr_tr/*"],
   "content_scripts": [
     {
       "matches": ["https://www2.hm.com/tr_tr/*"],
-      "js": ["bundle.js"]
+      "js": ["content.js"]
     }
-  ]
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  }
 }
