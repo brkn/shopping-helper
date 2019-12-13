@@ -34,7 +34,7 @@ module.exports = {
     "comma-dangle": ["error", "only-multiline"],
     "object-curly-spacing": ["error", "never"],
     quotes: ["error", "double"],
-    "arrow-parens": ["error", "as-needed"],
+    "arrow-parens": ["error", "always"],
     "linebreak-style": 0,
 
     // override airbnb
