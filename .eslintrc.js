@@ -3,6 +3,7 @@ module.exports = {
     browser: true,
     es6: true,
     jest: true, // this removes errors like describe and test functions are not defined
+    webextensions: true,
   },
   extends: ["airbnb-base"],
   globals: {
